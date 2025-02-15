@@ -2,4 +2,7 @@
 
 ## 📌 This is my DevSecOps18 course repository at BIU. 👨🏻‍💻👨🏻‍🎓
 
-Chen Shiker
+[Check Out My Homework Folder](main/Homework1)
+
+
+© Chen Shiker
