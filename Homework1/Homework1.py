@@ -26,7 +26,31 @@ print("Divisors:", ", ".join(map(str, result)))
 # Thank you. Goodbye.
 #
 #
-# # num = input('Insert a positive number: ')
-# # while()
+
+def collect_numbers():
+    count = 0  # מונה_את_כמות_המספרים_שהוזנו
+    total_sum = 0  # סכום_המספרים_שנקלטו
+
+    while True:
+        if count == 0:
+            user_input = input(f"Please enter number #{count + 1}: ")
+        else:
+            avg = total_sum / count  # חישוב_ממוצע
+            user_input = input(f"Please enter number #{count + 1} (avg={avg:.2f}. Sum={total_sum}): ")
+
+        num = int(user_input)  # המרת_הקלט_למספר_שלם
+
+        if num < 0:  # יציאה_אם_המספר_שלילי
+            break
+
+        count += 1
+        total_sum += num
+
+    print("Thank you. Goodbye.")
+
+
+# קריאה לפונקציה
+collect_numbers()
+
 
 
