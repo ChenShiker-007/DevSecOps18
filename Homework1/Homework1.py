@@ -3,19 +3,19 @@
 
 # Question 1 ##
 
-def find_divisors(n):
-    divisors = [n]
-    for i in range(1, n // 2 + 1):
-        if n % i == 0:
-            divisors.append(i)
-    return sorted(divisors) #הדפסה_מסודרת_באמצעות_SORT
-
-# קבלת מספר מהמשתמש
-num = int(input('Insert a number: '))
-
-# קריאה_לפונקציה_והדפסת_המחלקים
-result = find_divisors(num)
-print("Divisors:", ", ".join(map(str, result)))
+# def find_divisors(n):
+#     divisors = [n]
+#     for i in range(1, n // 2 + 1):
+#         if n % i == 0:
+#             divisors.append(i)
+#     return sorted(divisors) #הדפסה_מסודרת_באמצעות_SORT
+#
+# #קבלת_מספר_מהמשתמש
+# num = int(input('Insert a number: '))
+#
+# ##קריאה_לפונקציה_והדפסת_המחלקים
+# result = find_divisors(num)
+# print("Divisors:", ", ".join(map(str, result)))
 
 
 
@@ -38,18 +38,18 @@ def collect_numbers():
             avg = total_sum / count  # חישוב_ממוצע
             user_input = input(f"Please enter number #{count + 1} (avg={avg:.2f}. Sum={total_sum}): ")
 
-        num = int(user_input)  # המרת_הקלט_למספר_שלם
+        num1 = int(user_input)  # המרת_הקלט_למספר_שלם
 
-        if num < 0:  # יציאה_אם_המספר_שלילי
+        if num1 < 0:  #יציאה_אם_המספר_שלילי
             break
 
         count += 1
-        total_sum += num
+        total_sum += num1
 
     print("Thank you. Goodbye.")
 
 
-# קריאה לפונקציה
+#קריאה_לפונקציה
 collect_numbers()
 
 
